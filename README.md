@@ -1,14 +1,3 @@
-<style>
-    .collection-method-list > p {
-        column-count: 3; -moz-column-count: 3; -webkit-column-count: 3;
-        column-gap: 2em; -moz-column-gap: 2em; -webkit-column-gap: 2em;
-    }
-
-    .collection-method-list a {
-        display: block;
-    }
-</style>
-
 # go-function-helpers
 
 本项目收录一些高频、实用的 Go 语言助手函数，函数名称尽可能的和 PHP 中同功能函数一致，避免重复造轮子，提高开发效率。  
@@ -25,14 +14,9 @@
 
 ### 数组 & 切片
 
-<div class="collection-method-list" markdown="1">
-<p style="color: red;">
-123
-[InArray](#method-InArray)
-[ArrayChunk](#method-ArrayChunk)
-
-</p>
-</div>
+a | b
+--- | ---
+[InArray](#method-InArray) | [ArrayChunk](#method-ArrayChunk)
 
 ## 方法列表
 
@@ -59,8 +43,8 @@ func main() {
 }
 ```
 
-#### ArrayChunk
 <p id="method-ArrayChunk"></p>
+#### `ArrayChunk`
 
 将一个切片分割成多个子切片
 
