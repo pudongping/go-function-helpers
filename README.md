@@ -43,8 +43,8 @@ func main() {
 }
 ```
 
-<p id="method-ArrayChunk"></p>
 #### `ArrayChunk`
+<p id="method-ArrayChunk"></p>
 
 将一个切片分割成多个子切片
 
