@@ -30,3 +30,8 @@ func TestArrayChunk(t *testing.T) {
 	// [0 1 2 3 4 5 6 7 8 9]
 	fmt.Println(i)
 }
+
+func TestArrayUnique(t *testing.T) {
+	// [1 2 3 4]
+	fmt.Println(ArrayUnique([]int{1, 2, 3, 4, 3, 2, 1}))
+}

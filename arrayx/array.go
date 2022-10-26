@@ -34,3 +34,19 @@ func ArrayChunk(j []int, size int) [][]int {
 
 	return batches
 }
+
+// ArrayUnique 移除切片中重复的值
+// arr := []int{1, 2, 3, 4, 3, 2, 1}
+// output: [1 2 3 4]
+func ArrayUnique(arr []int) []int {
+	size := len(arr)
+	result := make([]int, 0, size)
+	temp := map[int]struct{}{}
+	for i := 0; i < size; i++ {
+		if _, ok := temp[arr[i]]; !ok {
+			temp[arr[i]] = struct{}{}
+			result = append(result, arr[i])
+		}
+	}
+	return result
+}

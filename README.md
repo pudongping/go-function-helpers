@@ -14,9 +14,9 @@
 
 ### 数组 & 切片
 
-a | b
---- | ---
-[InArray](#method-InArray) | [ArrayChunk](#method-ArrayChunk)
+a | b | c
+--- | --- | --- 
+[InArray](#method-InArray) | [ArrayChunk](#method-ArrayChunk) | [ArrayUnique](#method-ArrayUnique)
 
 ## 方法列表
 
@@ -71,5 +71,25 @@ func main() {
 
 	// [0 1 2 3 4 5 6 7 8 9]
     fmt.Println(i)
+}
+```
+
+#### `ArrayUnique`
+<p id="method-ArrayUnique"></p>
+
+移除切片中重复的值
+
+```go
+package main
+
+import (
+	"fmt"
+
+	"github.com/pudongping/go-function-helpers/arrayx"
+)
+
+func main() {
+	// [1 2 3 4]
+	fmt.Println(arrayx.ArrayUnique([]int{1, 2, 3, 4, 3, 2, 1}))
 }
 ```
