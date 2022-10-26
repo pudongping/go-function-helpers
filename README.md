@@ -1,3 +1,14 @@
+<style>
+    .collection-method-list > p {
+        column-count: 3; -moz-column-count: 3; -webkit-column-count: 3;
+        column-gap: 2em; -moz-column-gap: 2em; -webkit-column-gap: 2em;
+    }
+
+    .collection-method-list a {
+        display: block;
+    }
+</style>
+
 # go-function-helpers
 
 本项目收录一些高频、实用的 Go 语言助手函数，函数名称尽可能的和 PHP 中同功能函数一致，避免重复造轮子，提高开发效率。  
@@ -9,17 +20,6 @@
 
 - [JSON-to-Go](https://mholt.github.io/json-to-go/) —— 在线将 json 结构转换为 Go 类型定义
 - [php2golang](https://www.php2golang.com/) —— PHP 函数到 Go 语言的转化
-
-<style>
-    .collection-method-list > p {
-        column-count: 3; -moz-column-count: 3; -webkit-column-count: 3;
-        column-gap: 2em; -moz-column-gap: 2em; -webkit-column-gap: 2em;
-    }
-
-    .collection-method-list a {
-        display: block;
-    }
-</style>
 
 ## 可用方法
 
