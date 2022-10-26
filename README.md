@@ -26,7 +26,7 @@
 ### 数组 & 切片
 
 <div class="collection-method-list" markdown="1">
-<p>
+<p style="color: red;">
 
 [InArray](#method-InArray)
 [ArrayChunk](#method-ArrayChunk)
