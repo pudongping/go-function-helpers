@@ -26,10 +26,12 @@
 ### 数组 & 切片
 
 <div class="collection-method-list" markdown="1">
+<p>
 
 [InArray](#method-InArray)
 [ArrayChunk](#method-ArrayChunk)
 
+</p>
 </div>
 
 ## 方法列表
