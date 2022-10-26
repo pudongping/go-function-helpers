@@ -10,17 +10,32 @@
 - [JSON-to-Go](https://mholt.github.io/json-to-go/) —— 在线将 json 结构转换为 Go 类型定义
 - [php2golang](https://www.php2golang.com/) —— PHP 函数到 Go 语言的转化
 
+<style>
+    .collection-method-list > p {
+        column-count: 3; -moz-column-count: 3; -webkit-column-count: 3;
+        column-gap: 2em; -moz-column-gap: 2em; -webkit-column-gap: 2em;
+    }
+
+    .collection-method-list a {
+        display: block;
+    }
+</style>
+
 ## 可用方法
 
 ### 数组 & 切片
 
+<div class="collection-method-list" markdown="1">
+
 [InArray](#method-InArray)
 [ArrayChunk](#method-ArrayChunk)
 
+</div>
+
 ## 方法列表
 
-#### InArray
-<p id="method-InArray"></p>
+<a name="method-InArray"></a>
+#### `InArray`
 
 判断某个元素是否在某个数组中，存在则为 `true` 不存在则为 `false`
 
