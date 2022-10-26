@@ -12,13 +12,19 @@
 
 ## 可用方法
 
-### 数组 & 切片
+### [数组 & 切片](#class-Arrayx)
 
 a | b | c
 --- | --- | --- 
 [InArray](#method-InArray) | [ArrayChunk](#method-ArrayChunk) | [ArrayUnique](#method-ArrayUnique)
 
-### 类型转换
+### [字符串](#class-Strx)
+
+a | b | c
+--- | --- | --- 
+[StrRandom](#method-StrRandom) | |
+
+### [类型转换](#class-Convert)
 
 a | b | c
 --- | --- | --- 
@@ -27,6 +33,7 @@ a | b | c
 ## 方法列表
 
 ### 数组 & 切片
+<p id="class-Arrayx"></p>
 
 <a name="method-InArray"></a>
 #### `InArray`
@@ -102,7 +109,31 @@ func main() {
 }
 ```
 
+### 字符串
+<p id="class-Strx"></p>
+
+#### `StrRandom`
+<p id="method-StrRandom"></p>
+
+根据指定的种子数生成指定长度的随机字符串
+
+```go
+package main
+
+import (
+	"fmt"
+
+	"github.com/pudongping/go-function-helpers/strx"
+)
+
+func main() {
+	// iAgDdAe9JMo0wlrY
+	fmt.Println(strx.StrRandom(16, strx.LowerCase+strx.UpperCase+strx.Numeric))
+}
+```
+
 ### 类型转换
+<p id="class-Convert"></p>
 
 #### `Struct2Map`
 <p id="method-Struct2Map"></p>
