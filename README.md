@@ -14,9 +14,9 @@
 
 ### [数组 & 切片](#class-Arrayx)
 
-a | b                                        | c
---- |------------------------------------------| --- 
-[InArray](./arrayx#method-InArray) | [ArrayChunk](./arrayx#method-ArrayChunk) | [ArrayUnique](./arrayx#method-ArrayUnique)
+a | b                                       | c
+--- |-----------------------------------------| --- 
+[InArray](/tree/main/arrayx#method-InArray) | [ArrayChunk](/tree/main/arrayx#method-ArrayChunk) | [ArrayUnique](/tree/main/arrayx#method-ArrayUnique)
 
 ### [字符串](#class-Strx)
 
@@ -32,3 +32,6 @@ a | b | c
 
 
 ### [其他](#class-Other)
+
+
+https://github.com/pudongping/go-function-helpers/tree/main/arrayx#method-ArrayChunk
