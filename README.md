@@ -33,7 +33,7 @@ a | b | c
 ## 方法列表
 
 ### 数组 & 切片
-<p id="class-Arrayx"></p>
+<a name="class-Arrayx"></a>
 
 <a name="method-InArray"></a>
 #### `InArray`
@@ -59,7 +59,7 @@ func main() {
 ```
 
 #### `ArrayChunk`
-<p id="method-ArrayChunk"></p>
+<a name="method-ArrayChunk"></a>
 
 将一个切片分割成多个子切片
 
@@ -90,7 +90,7 @@ func main() {
 ```
 
 #### `ArrayUnique`
-<p id="method-ArrayUnique"></p>
+<a name="method-ArrayUnique"></a>
 
 移除切片中重复的值
 
@@ -110,10 +110,10 @@ func main() {
 ```
 
 ### 字符串
-<p id="class-Strx"></p>
+<a name="class-Strx"></a>
 
 #### `StrRandom`
-<p id="method-StrRandom"></p>
+<a name="method-StrRandom"></a>
 
 根据指定的种子数生成指定长度的随机字符串
 
@@ -133,15 +133,15 @@ func main() {
 ```
 
 ### 类型转换
-<p id="class-Convert"></p>
+<a name="class-Convert"></a>
 
 #### `Struct2Map`
-<p id="method-Struct2Map"></p>
+<a name="method-Struct2Map"></a>
 
 结构体转字典
 
 #### `Map2Struct`
-<p id="method-Map2Struct"></p>
+<a name="method-Map2Struct"></a>
 
 字典转结构体
 
