@@ -12,26 +12,23 @@
 
 ## 可用方法
 
-### [数组 & 切片](#class-Arrayx)
+### 数组 & 切片
 
-a | b                                       | c
---- |-----------------------------------------| --- 
-[InArray](/tree/main/arrayx#method-InArray) | [ArrayChunk](/tree/main/arrayx#method-ArrayChunk) | [ArrayUnique](/tree/main/arrayx#method-ArrayUnique)
+a | b                      | c
+--- |------------------------| ---
+[InArray](./arrayx) | [ArrayChunk](./arrayx) | [ArrayUnique](./array)
 
-### [字符串](#class-Strx)
+### 字符串
 
 a | b | c
 --- | --- | --- 
 [StrRandom](#method-StrRandom) | |
 
-### [类型转换](#class-Convert)
+### 类型转换
 
 a | b | c
 --- | --- | --- 
 [Struct2Map](#method-Struct2Map) | [Map2Struct](#method-Map2Struct) |
 
 
-### [其他](#class-Other)
-
-
-https://github.com/pudongping/go-function-helpers/tree/main/arrayx#method-ArrayChunk
+### 其他
