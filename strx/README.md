@@ -1,14 +1,10 @@
-### [字符串](#class-Strx)
+# 字符串
 
 a | b | c
 --- | --- | --- 
 [StrRandom](#method-StrRandom) | |
 
-
-### 字符串
-<a name="class-Strx"></a>
-
-#### `StrRandom`
+## `StrRandom`
 <a name="method-StrRandom"></a>
 
 根据指定的种子数生成指定长度的随机字符串

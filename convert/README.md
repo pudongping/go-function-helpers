@@ -1,18 +1,15 @@
-### [类型转换](#class-Convert)
+# 类型转换
 
 a | b | c
 --- | --- | --- 
 [Struct2Map](#method-Struct2Map) | [Map2Struct](#method-Map2Struct) |
 
-### 类型转换
-<a name="class-Convert"></a>
-
-#### `Struct2Map`
+## `Struct2Map`
 <a name="method-Struct2Map"></a>
 
 结构体转字典
 
-#### `Map2Struct`
+## `Map2Struct`
 <a name="method-Map2Struct"></a>
 
 字典转结构体
