@@ -22,13 +22,17 @@ a | b                      | c
 
 a | b | c
 --- | --- | --- 
-[StrRandom](#method-StrRandom) | |
+[StrRandom](./strx) | |
 
 ### 类型转换
 
-a | b | c
---- | --- | --- 
-[Struct2Map](#method-Struct2Map) | [Map2Struct](#method-Map2Struct) |
+a | b                   | c
+--- |---------------------| --- 
+[Struct2Map](./convert) | [Map2Struct](./convert) |
 
 
-### 其他
+### 时间
+
+[Date](./timex) | [Date](./timex)  | [Date](./timex) 
+--- |------------------|------------------
+[Date](./timex) |                  |
