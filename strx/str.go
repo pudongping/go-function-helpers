@@ -2,6 +2,7 @@ package strx
 
 import (
 	"crypto/rand"
+	"unicode"
 )
 
 const (
@@ -41,4 +42,22 @@ func StrRandom(length int, s string) string {
 			}
 		}
 	}
+}
+
+// Snake 将给定的字符串转换为 snake_case「蛇式」
+// s := "fooBar"
+// output: "foo_bar"
+func Snake(s string) string {
+	var output []rune
+	for i, r := range s {
+		if i == 0 {
+			output = append(output, unicode.ToLower(r))
+			continue
+		}
+		if unicode.IsUpper(r) {
+			output = append(output, '_')
+		}
+		output = append(output, unicode.ToLower(r))
+	}
+	return string(output)
 }

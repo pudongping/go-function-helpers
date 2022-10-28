@@ -21,3 +21,9 @@ func TestStrRandom(t *testing.T) {
 	time.Sleep(time.Second * 3)
 	fmt.Printf("len %+v cap %+v \n rr %v \n", len(r1), cap(r1), r1)
 }
+
+func TestSnake(t *testing.T) {
+	fmt.Println(Snake("fooBar"))      // foo_bar
+	fmt.Println(Snake("我是张三AbCDt"))   // 我是张三_ab_c_dt
+	fmt.Println(Snake("我是张三AbCDt%d")) // 我是张三_ab_c_dt%d
+}
