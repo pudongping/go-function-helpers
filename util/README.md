@@ -3,6 +3,7 @@
 [Empty](#method-Empty) | [Md5](#method-Md5) 
 --- | ---
 [BcryptHash](#method-BcryptHash) | [BcryptCheck](#method-BcryptCheck)
+[IsNumeric](#method-IsNumeric) | 
 
 ## `Empty`
 <a name="method-Empty"></a>
@@ -23,3 +24,8 @@ hash 加密密码
 <a name="method-BcryptCheck"></a>
 
 对比明文密码和哈希值是否一致
+
+## `IsNumeric`
+<a name="method-IsNumeric"></a>
+
+检测变量是否为数字或数字字符串

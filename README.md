@@ -42,3 +42,4 @@ a | b                    | c
 [Empty](./util) | [Md5](./util) 
 --- | ---
 [BcryptHash](./util) | [BcryptCheck](./util)
+[IsNumeric](./util) |
