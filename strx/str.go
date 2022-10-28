@@ -2,6 +2,7 @@ package strx
 
 import (
 	"crypto/rand"
+	"strings"
 	"unicode"
 )
 
@@ -60,4 +61,21 @@ func Snake(s string) string {
 		output = append(output, unicode.ToLower(r))
 	}
 	return string(output)
+}
+
+// Studly 将给定字符串「蛇式」转化为 camelCase「大驼峰式」
+// s := "foo_bar"
+// output: "FooBar"
+func Studly(s string) string {
+	s = strings.ReplaceAll(s, "_", " ")
+	s = strings.Title(s) // 首字母大写的格式
+	return strings.Replace(s, " ", "", -1)
+}
+
+// Camel 将给定字符串「蛇式」转化为 camelCase「小驼峰式」
+// s := "foo_bar"
+// output: "fooBar"
+func Camel(s string) string {
+	s = Studly(s)
+	return string(unicode.ToLower(rune(s[0]))) + s[1:]
 }

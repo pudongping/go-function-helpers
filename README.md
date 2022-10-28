@@ -20,9 +20,9 @@ a | b                      | c
 
 ### 字符串
 
-a | b               | c
---- |-----------------| --- 
-[StrRandom](./strx) | [Snake](./strx) |
+[StrRandom](./strx) | [Snake](./strx) 
+--- | ---
+[Studly](./strx) | [Camel](./strx)
 
 ### 类型转换
 

@@ -27,3 +27,11 @@ func TestSnake(t *testing.T) {
 	fmt.Println(Snake("我是张三AbCDt"))   // 我是张三_ab_c_dt
 	fmt.Println(Snake("我是张三AbCDt%d")) // 我是张三_ab_c_dt%d
 }
+
+func TestStudly(t *testing.T) {
+	fmt.Println(Studly("foo_bar")) // FooBar
+}
+
+func TestCamel(t *testing.T) {
+	fmt.Println(Camel("foo_bar")) // fooBar
+}
