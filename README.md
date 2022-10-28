@@ -20,9 +20,9 @@ a | b                      | c
 
 ### 字符串
 
-[StrRandom](./strx) | [Snake](./strx) 
---- | ---
-[Studly](./strx) | [Camel](./strx)
+[StrRandom](./strx) | [Snake](./strx) | [Studly](./strx) | [Camel](./strx)
+--- | --- | --- | ---
+[Coalesce](./strx) | | |
 
 ### 类型转换
 

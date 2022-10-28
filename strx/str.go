@@ -79,3 +79,20 @@ func Camel(s string) string {
 	s = Studly(s)
 	return string(unicode.ToLower(rune(s[0]))) + s[1:]
 }
+
+// Coalesce 高性能字符串拼接
+// s1 := Coalesce("11", "+", "22", "=", "33")
+// s2 := Coalesce([]string{"11", "+", "22", "=", "33"}...)
+// s1 和 s2 都输出 "11+22=33"
+func Coalesce(s ...string) string {
+	if len(s) == 0 {
+		return ""
+	}
+
+	var str strings.Builder
+	for _, v := range s {
+		str.WriteString(v)
+	}
+
+	return str.String()
+}

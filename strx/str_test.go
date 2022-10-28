@@ -35,3 +35,8 @@ func TestStudly(t *testing.T) {
 func TestCamel(t *testing.T) {
 	fmt.Println(Camel("foo_bar")) // fooBar
 }
+
+func TestCoalesce(t *testing.T) {
+	fmt.Println(Coalesce("11", "+", "22", "=", "33"))              // 11+22=33
+	fmt.Println(Coalesce([]string{"11", "+", "22", "=", "33"}...)) // 11+22=33
+}

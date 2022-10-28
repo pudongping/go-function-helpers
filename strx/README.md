@@ -82,3 +82,23 @@ func main() {
 	fmt.Println(strx.Camel("foo_bar"))  // fooBar
 }
 ```
+
+## `Coalesce`
+<a name="method-Studly"></a>
+
+高性能字符串拼接
+
+```go
+package main
+
+import (
+	"fmt"
+
+	"github.com/pudongping/go-function-helpers/strx"
+)
+
+func main() {
+	fmt.Println(strx.Coalesce("11", "+", "22", "=", "33"))              // 11+22=33
+	fmt.Println(strx.Coalesce([]string{"11", "+", "22", "=", "33"}...)) // 11+22=33
+}
+```
