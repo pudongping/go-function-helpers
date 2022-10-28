@@ -36,3 +36,9 @@ a | b                   | c
 a | b                    | c 
 --- |----------------------|------------------
 [Date](./timex) | [StrToTime](./timex) |
+
+### 其他
+
+[Empty](./util) | [Md5](./util) 
+--- | ---
+[BcryptHash](./util) | [BcryptCheck](./util)
