@@ -25,7 +25,7 @@ func Date(format string, ts ...time.Time) string {
 		"j", "2", // 月份中的第几天，没有前导零
 
 		"D", "Mon", // 星期几，文本表示，3 个字母
-		"l", "Monday", // 星期几，完整的文本格式;L的小写字母
+		"l", "Monday", // 星期几，完整的文本格式（L的小写字母）
 
 		// 时间
 		"g", "3", // 小时，12 小时格式，没有前导零
@@ -34,7 +34,7 @@ func Date(format string, ts ...time.Time) string {
 		"H", "15", // 小时，24 小时格式，有前导零
 
 		"a", "pm", // 小写的上午和下午值
-		"A", "PM", // 小写的上午和下午值
+		"A", "PM", // 大写的上午和下午值
 
 		"i", "04", // 有前导零的分钟数
 		"s", "05", // 秒数，有前导零
@@ -47,4 +47,18 @@ func Date(format string, ts ...time.Time) string {
 		t = ts[0]
 	}
 	return t.Format(format)
+}
+
+// StrToTime 时间字符串转时间格式
+// value := "2022-10-28 00:42:09"
+// output: 2022-10-28 00:42:09 +0800 CST
+func StrToTime(value string, layout ...string) (time.Time, error) {
+	l := "2006-01-02 15:04:05"
+	if len(layout) > 0 {
+		l = layout[0]
+	}
+	// t, err = time.Parse(layout, value)
+	// 因为 time.Parse 解析出来的时区是 time.UTC 在中国，将会相差 8 个小时
+	// 因此使用 time.ParseInLocation
+	return time.ParseInLocation(l, value, time.Local)
 }
